@@ -10,9 +10,17 @@ Key highlights of the framework:
 🔧 Configurable Setup – Driven by property files for browser, environment, and other parameters.
 🛠 TestNG Features – Supports grouping, parameterization, dependencies, and data-driven testing.
 
-This framework is ideal for functional testing, smoke/sanity validation, and regression suites, with the ability to easily extend towards CI/CD pipelines.
+This framework is ideal for functional testing, smoke/sanity validation, and regression suites, with the ability to easily extend towards CI/CD pipelines. Also, this framework automates key workflows on the BookMyShow platform, including:
 
-## 🛠 Tech Stack  **
+- City Module → Valid and invalid city selection, changing previously selected city.
+- Login Module → Valid and invalid login using mobile number, validating UI elements of the login flow.
+- Movie Module → Validating currently running movies, upcoming movies, and home page top menu navigation.
+- Gift Card Module → Automating gift card workflow and validating UI elements.
+
+🔹 The framework is built to serve as a baseline automation suite for BookMyShow and can be easily extended to include advanced modules like payments, bookings, and end-to-end flows.
+🔹 It also demonstrates best practices in WebDriver management, waits, exception handling, and reusable utilities.
+
+## 🛠 Tech Stack  
 
 - *Language:* Java  
 - *Automation Tool:* Selenium
