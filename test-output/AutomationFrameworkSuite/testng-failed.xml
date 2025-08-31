@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AutomationFrameworkSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Login Tests(failed)">
+    <classes>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="testValidLogin"/>
+          <include name="testLoginUIElements"/>
+          <include name="setUp"/>
+          <include name="testInvalidMobileLogin"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+    </classes>
+  </test> <!-- Login Tests(failed) -->
+  <test thread-count="5" name="City Tests(failed)">
+    <classes>
+      <class name="tests.CityTest">
+        <methods>
+          <include name="searchValidCity"/>
+          <include name="selectCityByIcon"/>
+          <include name="setup"/>
+          <include name="searchInvalidCity"/>
+          <include name="tearDown"/>
+          <include name="viewAllCitiesValidation"/>
+        </methods>
+      </class> <!-- tests.CityTest -->
+    </classes>
+  </test> <!-- City Tests(failed) -->
+  <test thread-count="5" name="Movie Tests(failed)">
+    <classes>
+      <class name="tests.MovieTest">
+        <methods>
+          <include name="setup"/>
+          <include name="selectDateAndTheatre"/>
+          <include name="tearDown"/>
+          <include name="searchValidMovie"/>
+          <include name="moviesTabValidation"/>
+        </methods>
+      </class> <!-- tests.MovieTest -->
+    </classes>
+  </test> <!-- Movie Tests(failed) -->
+  <test thread-count="5" name="Gift Card Tests(failed)">
+    <classes>
+      <class name="tests.GiftCardTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setup"/>
+          <include name="selectGiftCard"/>
+          <include name="validateInvalidRecipientDetails"/>
+        </methods>
+      </class> <!-- tests.GiftCardTest -->
+    </classes>
+  </test> <!-- Gift Card Tests(failed) -->
+</suite> <!-- Failed suite [AutomationFrameworkSuite] -->

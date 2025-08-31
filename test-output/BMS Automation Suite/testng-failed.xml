@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BMS Automation Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Login Tests(failed)">
+    <classes>
+      <class name="tests.LoginTest">
+        <methods>
+          <include name="setup"/>
+          <include name="testValidSignIn"/>
+          <include name="tearDown"/>
+          <include name="testInvalidSignIn"/>
+        </methods>
+      </class> <!-- tests.LoginTest -->
+    </classes>
+  </test> <!-- Login Tests(failed) -->
+  <test thread-count="5" name="City Tests(failed)">
+    <classes>
+      <class name="tests.CityTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="testUIElements"/>
+        </methods>
+      </class> <!-- tests.CityTest -->
+    </classes>
+  </test> <!-- City Tests(failed) -->
+</suite> <!-- Failed suite [BMS Automation Suite] -->
