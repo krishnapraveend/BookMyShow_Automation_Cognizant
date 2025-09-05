@@ -14,9 +14,9 @@ public final class LocatorRepository {
         L.put("region", By.xpath("//span[text()='Bengaluru']")); 
 
         // Sign In
-        L.put("signInBtn", By.xpath("/html/body/div[1]/div/div[1]/div[1]/div/div/div/div[2]/div[2]/div[1]"));
+        L.put("signInBtn", By.xpath("//div[text()='Sign in']"));
         L.put("mobileNumberBox", By.id("userMobileNumber"));
-        L.put("continueBtn", By.xpath("/html/body/div[1]/div/div[4]/div/div/div[2]/div[2]/div[2]/div"));
+        L.put("continueBtn", By.xpath("//div[text()='Continue']"));
         L.put("otp", By.xpath("//input[@type='tel']"));
         L.put("otpContinueBtn", By.xpath("/html/body/div[1]/div/div[4]/div/div/div[2]/div/div[3]/div/div"));
         L.put("backBtn", By.xpath("//div[@class='sc-1ydq0aj-0 bIaakI']"));
