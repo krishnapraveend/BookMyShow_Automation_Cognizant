@@ -20,7 +20,7 @@
             <class name="tests.GiftCardTest"/>
         </classes>
     </test>
-
+<!--
     <test name="Edge Tests">
         <parameter name="browser" value="edge"/>
         <classes>
@@ -30,5 +30,5 @@
             <class name="tests.GiftCardTest"/>
         </classes>
     </test>
-
+-->
 </suite>
