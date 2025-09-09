@@ -15,25 +15,25 @@ pipeline {
 
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t $IMAGE_NAME .'
+                bat 'docker build -t $IMAGE_NAME .'
             }
         }
 
         stage('Run Container') {
             steps {
-                sh 'docker run -d --name $CONTAINER_NAME $IMAGE_NAME'
+                bat 'docker run -d --name $CONTAINER_NAME $IMAGE_NAME'
             }
         }
 
         stage('Run Tests in Container') {
             steps {
-                sh 'docker exec $CONTAINER_NAME mvn clean test'
+                bat 'docker exec $CONTAINER_NAME mvn clean test'
             }
         }
 
         stage('Show Running Containers') {
             steps {
-                sh 'docker ps'
+                bat 'docker ps'
             }
         }
     }
@@ -43,8 +43,8 @@ pipeline {
             echo 'Inspect the running container now in Docker Desktop or via CLI.'
             echo 'You can also run: docker exec -it my-running-container /bin/bash'
             sleep time: 30, unit: 'SECONDS'
-            sh 'docker stop $CONTAINER_NAME || true'
-            sh 'docker rm $CONTAINER_NAME || true'
+            bat 'docker stop $CONTAINER_NAME || true'
+            bat 'docker rm $CONTAINER_NAME || true'
         }
     }
 }
