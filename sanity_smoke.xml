@@ -1,11 +1,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Smoke Suite" parallel="tests" thread-count="1">
+<suite name="Smoke Suite" parallel="methods" thread-count="1">
 
    <test name="Chrome Tests">
         <parameter name="browser" value="firefox"/>
         <classes>
             <class name="tests.CityTest"/>
+             <class name="test.LoginTest">
+              <methods>
+                <include name="testLoginWithValidMobile" />
+              </methods>
+            </class>
         </classes>
     </test>
     
+
 </suite>
